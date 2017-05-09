@@ -19,10 +19,15 @@ config_packages(){
 } 
 
 main (){
+if (( $EUID != 0 )); then
+     echo "=============PLEASE RUN AS ROOT============="
+     echo "=============INSTALLATION FAILED============="
+    exit 0
+fi
   doing_update
   install_packages
   config_packages
-  echo "Installation Complete"
+  echo "=============INSTALLATION COMPLETE============="
   exit 0
 }
 main
