@@ -7,3 +7,4 @@ echo "something"
 main (){
 shout_something
 }
+main
