@@ -1,7 +1,7 @@
 #!/bin/bash
-shout_something(){
-echo "not something"
-
+doing_update(){
+  echo "=============DOING SYSTEM UPDATE============="
+  apt-get update
 }
 
 main (){
