@@ -1,6 +1,6 @@
 #!/bin/bash
 shout_something(){
-echo "something"
+echo "not something"
 
 }
 
